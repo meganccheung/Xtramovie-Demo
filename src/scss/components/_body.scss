@@ -1,0 +1,26 @@
+// Body
+body {
+  background-color: $bgDark;
+  color: $textLight;
+  font-family: $textFont;
+}
+
+.about-page {
+  padding: 6rem 2rem 6rem 2rem;
+  text-align: center;
+  font-size: $fontSmall;
+
+  @include mq($tablet) {
+    font-size: 14px;
+    padding: 6rem 4rem;
+  }
+  @include mq($laptop) {
+    padding: 9rem 4rem;
+  }
+}
+
+.about-logo {
+  width: 4.375rem;
+  padding-top: 1rem;
+  z-index: 100;
+}

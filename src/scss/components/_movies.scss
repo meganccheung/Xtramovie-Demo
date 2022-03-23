@@ -1,0 +1,42 @@
+// Movies
+
+.movies-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em;
+
+  @include mq($firstBp) {
+    padding: 0 1.5em 3em 1.5em;
+  }
+
+  @include mq($firstBp) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3em 3em 3em;
+  }
+
+  @include mq($tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+  }
+  @include mq($secondBp) {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 0.8em;
+  }
+
+  @include mq($thirdBp) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+  .page-home .movie-card-container:last-child {
+    @include mq($tablet) {
+      display: none;
+    }
+    @include mq($secondBp) {
+      display: block;
+    }
+    @include mq($thirdBp) {
+      display: none;
+    }
+  }
+

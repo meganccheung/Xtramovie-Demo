@@ -1,0 +1,110 @@
+// Search
+
+// Search on Page Home
+.search-nav {
+  @include mq($desktop) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: baseline;
+  }
+  .search {
+    padding: 0.125rem 2.5rem 0.0625rem 2.5rem;
+  }
+}
+
+// The Actual Search Bar
+.search-bar {
+  border: 1px solid #8196a4;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  background-color: $searchDark;
+  color: $textLight;
+  &:focus {
+    outline: none;
+  }
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $grey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $textLight;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $textLight;
+}
+
+// Search on Page Search
+.page-search {
+  .no-result {
+    font-size: 1.25rem;
+    padding-top: 5rem;
+    height: 50vh;
+    text-align: center;
+  }
+}
+
+.page-search-header {
+  text-align: center;
+  margin: 1rem;
+
+  @include mq($desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.75rem;
+    margin: 2rem 3rem;
+    align-items: center;
+  }
+
+  .search-results {
+    margin-top: 1rem;
+
+    @include mq($desktop) {
+      grid-column: 2 / 4;
+      @include mc (false);
+      align-self: center;
+    }
+  }
+}
+
+// Changing the min-height of the images to get consistent poster sizes so layout won't break, and preventing text from breaking as well
+
+.page-search .movie-poster img,
+.fav-movie-poster img.fav-poster {
+    min-height: 24.375rem;
+    max-height: 49.375rem;
+    width: 100%;
+    object-fit: cover;
+
+    @include mq($firstBp) {
+      // min-height: 29.0625rem;
+      max-height: 21.375rem;
+    }
+
+    @include mq($tablet-med) {
+      // min-height: 30.375rem;
+      max-height: 19.5rem;
+    }
+
+    @include mq($tablet) {
+      // min-height: 26.5rem;
+      max-height: 19.5rem;
+    }
+
+    @include mq($desktopWide) {
+      // min-height: 24.375rem;
+      max-height: 20.25rem;
+    }
+
+    @include mq($large-laptop) {
+      // min-height: 27.0625rem;
+      max-height: 24.0625rem;
+    }
+  }

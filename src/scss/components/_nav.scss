@@ -1,0 +1,137 @@
+// Navigation
+
+// Main Nav
+.main-nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  visibility: hidden;
+  z-index: 20;
+  transition: visibility 0s 0.3s;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+  }
+  padding-top: 5rem;
+
+  .show & {
+    visibility: visible;
+    transition: visibility 0s;
+    transition: transform 0.3s ease;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    list-style: none;
+  }
+
+  a {
+    color: $textLight;
+    text-decoration: none;
+    display: block;
+    line-height: 3.125rem;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.8125rem 0.75rem;
+    font-weight: 700;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #408196;
+    }
+  }
+}
+
+a.nav-active {
+  color: #408196;
+}
+
+// Sorting Menu
+
+.nav-sort {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  padding: 0.7rem 0 0.7rem 0.7rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $textLight;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: $regularSize;
+
+    &:hover {
+      color: #408196;
+    }
+  }
+}
+
+// Webpage size
+@include mq($tablet) {
+  .main-nav {
+    position: static;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    height: 15rem;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+    }
+
+    a {
+      text-align: center;
+      line-height: 59px;
+      width: 140px;
+    }
+  }
+
+  .nav-sort {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    padding: 0.7rem 0 0.7rem 0;
+
+    a {
+      color: white;
+      font-size: 1rem;
+      font-weight: $regularSize;
+      text-decoration: none;
+      list-style: none;
+      display: block;
+
+        &:hover
+         {
+          color: $textDark;
+        }
+      }
+
+      @include mq($desktop) {
+        main-nav {
+          ul {
+            width: 60%;
+          }
+        }
+      }
+  }
+}
+
+a.sort-active {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid $textLight;
+}
