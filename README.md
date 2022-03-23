@@ -1,3 +1,5 @@
+Xtramovie is a responsive online movie database application built with ReactJS that allow users to browse real time movie data, sort movie by popularity, add movie to their favorite page and search bar to find movies. TMDB API is used to display the movie ratings, release date, titles, summaries and genres.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
