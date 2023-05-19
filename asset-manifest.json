@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/xtramovie/static/css/main.40723412.css",
-    "main.js": "/xtramovie/static/js/main.b9d719d2.js",
-    "static/media/no-backdrop.jpg": "/xtramovie/static/media/no-backdrop.817410494eb3e043fcb7.jpg",
-    "static/media/blue-heart.png": "/xtramovie/static/media/blue-heart.12b8fa37fee0b8f692d9.png",
-    "static/media/heart-white.png": "/xtramovie/static/media/heart-white.ff90d2458020af82bcb2.png",
-    "static/media/tmdb.svg.png": "/xtramovie/static/media/tmdb.svg.6d515ee2d1f40297678a.png",
-    "static/media/movie-logo.jpg": "/xtramovie/static/media/movie-logo.a1168a2f437e6d3813ff.jpg",
-    "static/media/no-movie-poster.jpg": "/xtramovie/static/media/no-movie-poster.dc594cc695d6716f3218.jpg",
-    "index.html": "/xtramovie/index.html",
-    "main.40723412.css.map": "/xtramovie/static/css/main.40723412.css.map",
-    "main.b9d719d2.js.map": "/xtramovie/static/js/main.b9d719d2.js.map"
+    "main.css": "/Xtramovie-Demo/static/css/main.40723412.css",
+    "main.js": "/Xtramovie-Demo/static/js/main.0554ef48.js",
+    "static/media/no-backdrop.jpg": "/Xtramovie-Demo/static/media/no-backdrop.817410494eb3e043fcb7.jpg",
+    "static/media/blue-heart.png": "/Xtramovie-Demo/static/media/blue-heart.12b8fa37fee0b8f692d9.png",
+    "static/media/heart-white.png": "/Xtramovie-Demo/static/media/heart-white.ff90d2458020af82bcb2.png",
+    "static/media/tmdb.svg.png": "/Xtramovie-Demo/static/media/tmdb.svg.6d515ee2d1f40297678a.png",
+    "static/media/movie-logo.jpg": "/Xtramovie-Demo/static/media/movie-logo.a1168a2f437e6d3813ff.jpg",
+    "static/media/no-movie-poster.jpg": "/Xtramovie-Demo/static/media/no-movie-poster.dc594cc695d6716f3218.jpg",
+    "index.html": "/Xtramovie-Demo/index.html",
+    "main.40723412.css.map": "/Xtramovie-Demo/static/css/main.40723412.css.map",
+    "main.0554ef48.js.map": "/Xtramovie-Demo/static/js/main.0554ef48.js.map"
   },
   "entrypoints": [
     "static/css/main.40723412.css",
-    "static/js/main.b9d719d2.js"
+    "static/js/main.0554ef48.js"
   ]
 }
